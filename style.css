@@ -1,0 +1,345 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-image: radial-gradient(circle, #d7e1d0, #d8eae4, #e3f1f3, #f3f7fb, #ffffff);
+}
+.team{
+   width:100%;
+
+}
+
+.container{
+    width:80vw;
+}
+.mx-auto{
+    margin: 0 auto;
+}
+.heading-section{
+    text-align: center;
+    padding: 40px 0px;
+}
+.heading-section h1{
+    font-size: 30px;
+   text-transform:uppercase;
+   margin: 20px 0px;
+}
+.heading-section p{
+    margin-top:30px;
+    font-size: 20px;
+}
+.row{
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(4 , 23%);
+    grid-template-rows: repeat(3 ,350px);
+    position: relative;
+    margin-top:40px; 
+}
+
+.box{
+
+    border-radius: 10px;
+    margin-bottom: 50px;
+    position: relative;
+    overflow: hidden;
+    box-shadow:rgba(0, 0, 0, 0.2) 0px 7px 10px 0px; 
+    
+}
+.box img{
+    width: 100%;
+    height:100%;
+}
+.layer {
+    background: rgba(255, 255, 255, 0);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    color:rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+    
+
+}
+.layer h1{
+    text-align: center;
+    font-size: 30px;
+    margin:20px 00px;
+    width: 90%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+  top:50%;
+    transform: translateX(-50% );
+   text-transform: capitalize;
+    opacity: 0;
+    transition: 0.9s;
+}
+.layer:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.layer:hover h1 {
+    top: 25%;
+    opacity: 1;
+    color: white;
+   
+    
+}
+
+.btn{
+    text-align: center;
+   
+}
+.btn button{
+    padding:15px 40px;
+    color:rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    font-size: 18px;  
+}
+.btn button:hover{
+    font-size: 20px;
+    background-color: rgb(21, 20, 20);
+}
+
+/* main-section  */
+.main{
+    margin-top:30px;
+    
+}
+.main-heading h1{
+    
+   margin-bottom:0px;
+   margin-top: 0px;
+}
+.row-grid{
+    display: grid;
+    justify-content: space-between;
+   
+    row-gap: 50px;
+    grid-template-columns: repeat(4 , 23%);
+    grid-template-rows: repeat(2 ,300px);
+    
+    margin-top:40px;
+
+padding:20px 0px;
+    
+}
+.col{
+    
+    display: flex;
+    flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding:10px 10px;
+  border-radius:10px;
+  box-shadow:rgba(0, 0, 0, 0.2) 0px 7px 10px 0px; 
+  transition: 0.6s;
+  
+}
+.col .img{
+    border-radius: 100%;
+    height:60%;
+    
+    width:60%;
+
+}
+.col .img img{
+   
+    width:100%;
+    border-radius: 100%;
+    height:100%;
+    border:4px solid rgb(255, 255, 255);
+}
+.col:hover{
+    background-color: rgba(218, 175, 220, 0.945);
+}
+
+.content {
+text-align: center;
+padding:10px 20px;
+color:rgb(0, 0, 0);
+}
+
+.content h2{
+    font-size: 25px;
+    padding:10px 0px;
+}
+.content h3{
+    text-transform: capitalize;
+}
+
+/* advisor */
+.row-flex{
+    display: flex;
+    justify-content: space-between;
+    padding:20px 0px;
+    flex-wrap: wrap;
+}
+.child{
+    width:31%;
+    display: flex;
+    flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding:10px 10px;
+  border-radius:10px;
+  box-shadow:rgba(0, 0, 0, 0.2) 0px 7px 10px 0px; 
+  transition: all .39s ease;
+  
+  
+}
+.child:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
+    background-color: rgba(220, 222, 234, 0.797);
+}
+.child .img{
+    border-radius: 100%; 
+    height:150px;
+    width:40%; 
+    
+
+}
+.child .img img{
+   
+    width:100%;
+    border-radius: 100%;
+    height:100%;
+    border:1px solid rgb(0, 0, 0);
+}
+.child .content h3{
+    font-size: 16px;
+}
+.child .content button{
+    padding:10px 20px;
+    margin:10px 0px;
+    background-color: white;
+    border-radius: 10px;
+    color:dodgerblue;
+    font-size: 15px;
+   border: none;
+   border:1px solid rgba(0, 0, 0, 0.475);
+}
+.child .content button:hover{
+    background-color: dodgerblue;
+    color:white;
+}
+/* media query */
+@media(max-width:1336px){
+    .row{
+     grid-template-columns: repeat(3 , 31%);
+     grid-template-rows: repeat(4 ,350px);
+     
+    } 
+    .row-grid{
+     grid-template-columns: repeat(3 , 31%);
+     grid-template-rows: repeat(3 ,300px);
+    
+    }
+ }
+ @media(max-width:1000px){
+     .row{
+      grid-template-columns: repeat(2 , 48%);
+      grid-template-rows: repeat(6 ,350px);
+     } 
+     .row-grid{
+         grid-template-columns: repeat(2 , 48%);
+         grid-template-rows: repeat(4 ,300px);
+        
+        }
+     .col .img{
+         width:40%;
+         height: 50%;
+     }
+  }
+  @media(max-width:680px){
+     .row{
+      grid-template-columns: repeat(1 , 85%);
+      grid-template-rows: repeat(12 ,350px);
+      justify-content: center;
+ 
+     } 
+     .row-grid{
+         grid-template-columns: repeat(1 , 100%);
+         grid-template-rows: repeat(8 ,300px);
+        
+        }
+  
+ 
+     .col .img{
+         width:30%;
+         height: 50%;
+     }
+  }
+  @media(max-width:400px){
+     .row{
+      grid-template-columns: repeat(1 , 100%);
+      grid-template-rows: repeat(10);
+      justify-content: center;
+     } 
+     .col .img{
+         width:60%;
+         height: 50%;
+     }
+     .child .img{
+         width:60%;
+     }
+  }
+  @media(max-width:290px){
+     .layer h1{
+         font-size: 25px;
+     }
+  }
+ 
+  @media(max-width:600px){
+     
+     .col .img{
+         width:50%;
+         height: 70%;
+     }
+  }
+  @media(max-width:350px){
+     
+     .col .img{
+         width:70%;
+         height: 60%;
+     }
+  }
+  @media(max-width:250px){
+     
+     .col .img{
+         width:90%;
+         height: 80%;
+     }
+  }
+ 
+  /* advisor */
+  @media(max-width:1150px){
+     
+    .child{
+     width:45%;
+     margin-bottom: 30px;
+    
+    }
+  }
+  @media(max-width:700px){
+     .row-flex{
+         justify-content: center;
+     }
+     .child{
+      width:90%;
+      margin-bottom: 30px;
+     }
+   }
+   
